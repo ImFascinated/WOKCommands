@@ -208,7 +208,7 @@ class WOKCommands extends EventEmitter {
    * @deprecated Please use the setCategorySettings instead of this method.
    */
   public setCategoryEmoji(
-    category: string | [{ [key: string]: any }],
+    category: string | [{ name: string; emoji: string; }],
     emoji?: string
   ): WOKCommands {
     console.warn(
